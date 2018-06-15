@@ -15,7 +15,7 @@
   <hr>
   <a herf="/HelloServlet">Get方式請求HelloServlet</a>
 
-  <form action="/HelloServlet" method="post">
+  <form action="/UploadServlet" method="post">
     <input type="submit" value="Post方式請求HelloServlet">
   </form>
   </body>

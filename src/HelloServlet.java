@@ -18,7 +18,7 @@ public class HelloServlet extends HttpServlet {
 //        super.doGet(req, resp);
         System.out.println("处理 get() 請求。。。");
         PrintWriter out = resp.getWriter();
-        out.print("hello servlet");
+        out.println("hello servlet");
     }
 
     @Override
@@ -26,15 +26,15 @@ public class HelloServlet extends HttpServlet {
 //        super.doPost(req, resp);
         System.out.println("处理 post() 請求。。。");
         PrintWriter out = resp.getWriter();
-        out.print("hello servlet");
+        out.println("hello servlet");
         //获得磁盘文件条目工厂
         DiskFileItemFactory factory = new DiskFileItemFactory();
-        out.print("hello servlet");
-        String str = request.getSession().getServletContext().getRealPath("");
-        //获取文件需要上传到的路径
-
-        String path = this.getServletContext().getRealPath("/upload");
-        String pathStr=null;
-        System.out.println("上传的图片路径:" + path);
+        out.println("hello servlet");
+//        String str = request.getSession().getServletContext().getRealPath("");
+//        //获取文件需要上传到的路径
+//
+//        String path = this.getServletContext().getRealPath("/upload");
+//        String pathStr=null;
+//        System.out.println("上传的图片路径:" + path);
     }
 }
