@@ -78,7 +78,7 @@ public class UploadServlet extends HttpServlet {
                     //它抛出的异常 用exception 捕捉
                     //item.write( new File(path,filename) );//第三方提供的
                     //手动写的
-                    str+="/upload/"+filename;
+                    str+="upload\\"+filename;
                     //pathStr="/upload/"+filename;
                     System.out.println("文件存储的路径:"+str);
                     pathStr=filename;
